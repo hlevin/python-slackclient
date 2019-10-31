@@ -18,8 +18,8 @@
                 "height": 100
               },
               "position": {
-                "x": 338,
-                "y": 100
+                "x": 371,
+                "y": 91
               },
               "angle": 0,
               "id": "3f305755-4bb0-4427-935d-fa74cdb516ba",
@@ -128,16 +128,34 @@
               "angle": 0,
               "id": "0f07e5b8-790b-4b7e-9202-96e6f31e90a9",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic spoofing threat"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic repudiation threat"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 2"
+                  "text": "Customer"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -152,12 +170,8 @@
               },
               "vertices": [
                 {
-                  "x": 343,
-                  "y": 251
-                },
-                {
-                  "x": 360,
-                  "y": 207
+                  "x": 342,
+                  "y": 231
                 }
               ],
               "id": "4a07b39d-8757-44e5-9d4b-7804e6cbfcf3",
@@ -166,7 +180,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 4",
+                      "text": "SQL response",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -195,12 +209,8 @@
               },
               "vertices": [
                 {
-                  "x": 453,
-                  "y": 239
-                },
-                {
-                  "x": 440,
-                  "y": 264
+                  "x": 471,
+                  "y": 228
                 }
               ],
               "id": "29f33ba2-510b-4747-bbcf-02a1c3851e9d",
@@ -209,7 +219,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 4",
+                      "text": "SQL query",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -228,6 +238,27 @@
               }
             },
             {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 252,
+                "y": 272
+              },
+              "target": {
+                "x": 474,
+                "y": 41
+              },
+              "vertices": [
+                {
+                  "x": 287,
+                  "y": 116
+                }
+              ],
+              "id": "e2d11f9a-b826-4071-937c-7a4ce8624620",
+              "z": 8,
+              "attrs": {}
+            },
+            {
               "type": "tm.Flow",
               "smooth": true,
               "source": {
@@ -238,46 +269,27 @@
               },
               "vertices": [
                 {
-                  "x": 238,
-                  "y": 59
-                },
-                {
-                  "x": 248,
-                  "y": 42
-                },
-                {
-                  "x": 267,
-                  "y": 36
-                },
-                {
-                  "x": 291,
-                  "y": 43
-                },
-                {
-                  "x": 307,
-                  "y": 59
-                },
-                {
-                  "x": 267,
-                  "y": 130
+                  "x": 283,
+                  "y": 71
                 }
               ],
-              "id": "1a7af5ee-5612-4114-8318-2ceec7b18c5d",
+              "id": "02f1f68a-e685-4854-a5f0-f96828252106",
               "labels": [
                 {
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 5",
+                      "text": "https request",
                       "font-weight": "400",
                       "font-size": "small"
                     }
                   }
                 }
               ],
-              "z": 7,
+              "z": 9,
               "hasOpenThreats": false,
               "isEncrypted": true,
+              "protocol": "TLS1.2",
               "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
@@ -287,27 +299,6 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
-            },
-            {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
-                "x": 216,
-                "y": 240
-              },
-              "target": {
-                "x": 408,
-                "y": 41
-              },
-              "vertices": [
-                {
-                  "x": 263,
-                  "y": 114
-                }
-              ],
-              "id": "e2d11f9a-b826-4071-937c-7a4ce8624620",
-              "z": 8,
-              "attrs": {}
             }
           ]
         },
