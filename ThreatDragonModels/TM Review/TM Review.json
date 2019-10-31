@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "title": "TM Review"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "dragon review",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
